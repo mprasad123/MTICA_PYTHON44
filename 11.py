@@ -1,13 +1,9 @@
-def  gen_int(n):
-    for i  in range(n):
-          yield i
+sample_dict ={
+    "name": "prabha",
+    "age":23,
+    "salary":1000000,
+    "city": "boyakonda"}
 
 
-def gen_2(gen):
-    for n in gen:
-        if n % 2:
-            yield n
-
-
-for i in gen_2(gen_int(10)):
-    print(i)
+sample_dict['location'] = sample_dict.pop('city')
+print(sample_dict)

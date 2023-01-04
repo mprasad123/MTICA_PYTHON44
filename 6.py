@@ -1,11 +1,14 @@
-def sum_num(x):
-     res=0
-     for i in  range (x+1):
-          res=res + i
-          yield ("i=", i, "res=",res)
-     return res
+sampleDict = {
+    "class": {
+        "student": {
+            "name":  "mike",
+            "marks": {
+                "physics": 70,
+                "history": 80
+                }
+            }
+        }
+    }
 
 
-ob=sum_num(10)
-for i in range(11):
-     print (next(ob))
+print(sampleDict["class"]["student"]["marks"]["history"])

@@ -1,13 +1,85 @@
-def add(n1,n2):
-    temp=n1+n2
-##    global variables:a,b,c,add
-##    local variables:n1,n2,temp
-    global a,b
-    a+=10
-    print("output of globals:", globals())
-    print("output of locals:",locals())
-    return temp
-a=int(input())
-b=int(input())
-c=add(a,b)
-print(a, '+', b, '=', c)
+sample_dict = {
+    'emp1': {'name': 'jhon', 'salary':80000},
+    'emp2': {'name': 'prabha', 'salary':70000},
+    'emp3': {'name': 'prasad', 'salary':60000},
+}
+
+sample_dict['emp3']['salary']=8500
+print(sample_dict)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    
+
+    

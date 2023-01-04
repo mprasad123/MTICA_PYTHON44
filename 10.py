@@ -1,11 +1,7 @@
-def calulateCubic():
-    i  =1;
-    while True:
-        yield  i*i*i
-        i +=1
+sample_dict = {'a':100, 'b': 200,  'c' : 300}
+##if 200 in sample_dict.values():
+##    print("200 present in a dict")
 
-
-for num in  calulateCubic():
-    if num > 10000:
-        break
-    print(num)
+for  k,v in sample_dict.items():
+    if v==200:
+        print("for",v,"keys is",k)

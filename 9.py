@@ -1,13 +1,17 @@
-def squares(x=0):
-      while x<10:
-            x=x+1
-            yield x*x
+sample_dict ={
+    "name": "prabha",
+    "age":23,
+    "salary":1000000,
+    "city": "boyakonda"}
+keys = ["name", "salary"]
 
 
-yieldedList=[i  for i in squares()]
-print(yieldedList)
- 
+##
+##for k in keys:
+##    sample_dict.pop(k)
+##print(sample_dict)
+d=dict()
+for i in sample_dict.keys()-keys:
+    d[i]=sample_dict[i]
 
-
-##yieldedList = list(squares())
-##print(yieldedList)
+print(d)

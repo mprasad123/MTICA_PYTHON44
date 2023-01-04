@@ -1,10 +1,9 @@
-def demo_yield():
-    print("code segment1 executed")
-    x=7
-    yield x*x
-    print("code segment2 executed")
-    yield 2
-    print("code segment1 executed")
-    yield 3
-    print("code segment4 executed")
-    
+dict1 ={'Ten': 10, 'Twenty': 20, 'thirty': 30}
+dict2 ={'Thirty': 30, 'fourty': 40, 'Fifty':50}
+
+
+dict3=dict1.copy()
+dict3.update(dict2)
+print(dict3)
+
+

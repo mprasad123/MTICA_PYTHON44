@@ -1,18 +1,21 @@
-spins = [  ('red', '18'), ('black', '13'), ( 'red', '7') ,
-                         ('red', '5'), ('red', '18'), ('black', '13'), ('red', '25'),
-                         ('red', '9'), ('black', '26'), ('black', '15'),
-                         ('black', '20'), ('black', '32'),('red', '3') ]
+sample_dict ={
+    "name": "prabha",
+    "age":23,
+    "salary":1000000,
+    "city": "boyakonda"}
+keys = ["name", "salary"]
 
-
-def countReds(  aList   ):
-    count=  0
-    for color,number in aList:
-        if color ==   'black':
-            yield count
-            count= 0
-        else:
-                count  += 1
-    yield count
-
-gaps=  [  gap for gap in countReds(spins) ]
-print  (gaps)
+##
+##newDict={}
+##for i in keys:
+##     newDict=sample_dict[i]
+##print(newDict)
+##
+##
+##newDict={  i:sample_dict[i]  for i in keys   }
+##print(newDict)
+      
+res = dict()
+for k in keys:
+    res.update({k : sample_dict[k]})
+print(res)
