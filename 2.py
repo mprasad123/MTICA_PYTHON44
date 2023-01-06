@@ -1,18 +1,8 @@
-def findFrequency(s):
-    frequencyDict=dict()
-    for i in s:
-        if i in frequencyDict:
-            frequencyDict[i] +=1
-        else:
-            frequencyDict[i]=1
-    return frequencyDict
+class Vechicle:
+    def __init__(self, max_speed,mileage):
+         self.max_speed=max_speed
+         self.mileage =mileage
 
-def formatoutput(d):
-    for i in sorted(d):
-        print(i,d[i])
-        
-
-n=int(input())
-for i in range(n):
-    inpStr=input()
-    print(findFrequency(inpStr))
+modelx = Vechicle(240, 32)
+print(modelx.max_speed, modelx.mileage)
+    

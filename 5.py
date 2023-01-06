@@ -1,9 +1,19 @@
-dict1 ={'Ten': 10, 'Twenty': 20, 'thirty': 30}
-dict2 ={'Thirty': 30, 'fourty': 40, 'Fifty':50}
+def findLCM(n1,n2):
+      if n1>0 or  n2>20:
+           return "INVALID"
+      if n1>n2:
+          n1,n2=n2,n1
+      i=n2
+      while True:
+          if i%n1==0 and i%n2==0:
+              return i
+          else:
+                i+=1
+      return None 
+        
 
+print("Enter two numbers")
+a=int(input())
+b=int(input())
 
-dict3=dict1.copy()
-dict3.update(dict2)
-print(dict3)
-
-
+print(findLCM(a,b))

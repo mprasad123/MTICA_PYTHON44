@@ -1,6 +1,22 @@
-dict1 ={'Ten': 10, 'Twenty': 20, 'thirty': 30}
-dict2 ={'Thirty': 30, 'fourty': 40, 'Fifty':50}
+class Vehicle:
+    def __init__(self,name, max_speed,mileage):
+          self.name =name
+          self.max_speed=max_speed 
+          self.mileage =mileage
 
 
-dict3={**dict1,**dict2}
-print(dict3)
+    def seating_capacity(self, capacity):
+          return  f"the seating capacity of a {self.name}\
+    is {capacity} passengers"
+
+
+class Bus(Vehicle):
+     def seating_capacity(self,capacity=50):
+           return super().seating_capacity(capacity=50)
+
+
+school_bus =Bus("school Volvo", 180,12)
+print(school_bus.seating_capacity())
+
+
+

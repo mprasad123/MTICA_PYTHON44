@@ -1,7 +1,16 @@
-employees = ['manu', 'prasad', 'manasa']
-defaults= {"designation":  'Developer', "salary": 80000}
+def findFactor(n):
+      temp=[]
+      for i in range (1,n+1):
+            if n%i==0:
+                 temp.append(i)
+      return temp
 
-data =dict.fromkeys(employees, defaults)
-print(data)
 
-print(data["manasa"])
+print("Enter two numbers")
+
+a = int(input())
+b= int(input())
+print(findFactor(a))
+
+
+

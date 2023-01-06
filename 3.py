@@ -1,7 +1,13 @@
-keys = ['Ten', 'Twenty', ' Thirty']
-values = [10,20,30]
-d=dict()
-for  i,j in zip(keys,values):
-     d[i]=j
+class Vehicle:
+    def __init__(self,name, max_speed,mileage):
+          self.name =name
+          self.max_speed=max_speed 
+          self.mileage =mileage
+         
+class Bus(Vehicle):
+      pass
 
-print(d)
+
+school_bus = Bus("school volvo",130,34)
+print("Vehicle Name:",school_bus.name, "speed:",
+        school_bus.max_speed, "Mileage:", school_bus.mileage)

@@ -1,21 +1,25 @@
-sample_dict ={
-    "name": "prabha",
-    "age":23,
-    "salary":1000000,
-    "city": "boyakonda"}
-keys = ["name", "salary"]
+def findFactor(n):
+      temp=[]
+      for i in range (1,n+1):
+            if n%i==0:
+                 temp.append(i)
+      return temp
 
-##
-##newDict={}
-##for i in keys:
-##     newDict=sample_dict[i]
-##print(newDict)
-##
-##
-##newDict={  i:sample_dict[i]  for i in keys   }
-##print(newDict)
-      
-res = dict()
-for k in keys:
-    res.update({k : sample_dict[k]})
-print(res)
+
+def findGCD(n1,n2):
+      lstn1=findFactor(n1)
+      lstn2=findFactor(n2)
+      s1=set(lstn1)
+      s2=set(lstn2)
+      ans=list(s1.intersection(s2))
+      ans.sort()
+      return ans[-1]
+
+print("Enter two numbers")
+
+a = int(input())
+b= int(input())
+print(findGCD(a,b))
+
+
+
