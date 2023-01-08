@@ -1,25 +1,19 @@
-def findFactor(n):
-      temp=[]
-      for i in range (1,n+1):
-            if n%i==0:
-                 temp.append(i)
-      return temp
+from tkinter import *
+
+class App:
+    def __init__(self, master):
+        frame=Frame(master)
+        frame.pack()
+        self.button=Button(frame, text="Quit", fg="pink", command=quit)
+        self.button.pack(side=LEFT)
+        self.slogan=Button(frame,text="Hello",
+                           command=self.write_slogan)
+        self.slogan.pack(side=LEFT)
 
 
-def findGCD(n1,n2):
-      lstn1=findFactor(n1)
-      lstn2=findFactor(n2)
-      s1=set(lstn1)
-      s2=set(lstn2)
-      ans=list(s1.intersection(s2))
-      ans.sort()
-      return ans[-1]
-
-print("Enter two numbers")
-
-a = int(input())
-b= int(input())
-print(findGCD(a,b))
+    def write_slogan(self):
+        print  ("Tkinter is easy to use")
 
 
-
+root=Tk()
+app=App(root)

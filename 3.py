@@ -1,13 +1,11 @@
-class Vehicle:
-    def __init__(self,name, max_speed,mileage):
-          self.name =name
-          self.max_speed=max_speed 
-          self.mileage =mileage
-         
-class Bus(Vehicle):
-      pass
+import sys
 
+print("Coming through stdout")
 
-school_bus = Bus("school volvo",130,34)
-print("Vehicle Name:",school_bus.name, "speed:",
-        school_bus.max_speed, "Mileage:", school_bus.mileage)
+save_stdout = sys.stdout
+fo =open(r"C:\Users\User\Desktop\pythonpractice\day9\abc1.txt", "w")
+sys.stdout=fo
+print("this line goes to abc1.txt")
+print(input())
+sys.stdout = save_stdout
+fo.close()

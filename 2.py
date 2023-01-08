@@ -1,8 +1,10 @@
-class Vechicle:
-    def __init__(self, max_speed,mileage):
-         self.max_speed=max_speed
-         self.mileage =mileage
+import sys
+print (sys.argv)
 
-modelx = Vechicle(240, 32)
-print(modelx.max_speed, modelx.mileage)
-    
+for i in range(len(sys.argv)):
+    if i == 0:
+        print("Function name:  {0}".format(sys.argv[0]))
+         #print("Function name:  %s" %sys.argv[0])
+    else:
+
+            print("{0}. argument:  {1}".format(i,sys.argv[i]))

@@ -1,16 +1,6 @@
-def findFactor(n):
-      temp=[]
-      for i in range (1,n+1):
-            if n%i==0:
-                 temp.append(i)
-      return temp
-
-
-print("Enter two numbers")
-
-a = int(input())
-b= int(input())
-print(findFactor(a))
-
-
-
+from tkinter import *
+master=Tk()
+demo_text="This is a sample demo of message widget."
+msg=Message(master,text=demo_text)
+msg.config(bg='lightgreen', font=('times', 24 ,'italic'))
+msg.pack()

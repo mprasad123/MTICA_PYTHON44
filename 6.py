@@ -1,19 +1,9 @@
-def findLCM(n1,n2):
-      if n1<0 or  n2<20:
-           return "INVALID"
-      if n1>n2:
-          n1,n2=n2,n1
-      i=n2
-      while True:
-          if i%n1==0 and i%n2==0:
-              return i
-          else:
-                i+=1
-      return None 
-        
+import datetime
+ob=datetime.datetime.now()
 
-print("Enter two numbers")
-a=int(input())
-b=int(input())
 
-print(findLCM(a,b))
+str1=str(ob.day)+'_'+str(ob.month)+'_'+str(ob.year)
+str2=str(ob.hour)+'_'+str(ob.minute)+'_'+str(ob.second)
+str3='Backup_'+str1+' _'+str2+'.db'
+print(str3)
+
